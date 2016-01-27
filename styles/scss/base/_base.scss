@@ -1,0 +1,58 @@
+// Bitters 1.1.0
+// http://bitters.bourbon.io
+// Copyright 2013-2015 thoughtbot, inc.
+// MIT License
+
+@import "variables";
+
+// Neat Settings -- uncomment if using Neat -- must be imported before Neat
+@import "grid-settings";
+
+@import "../lib/neat/neat";
+
+@import "buttons";
+@import "forms";
+@import "lists";
+@import "tables";
+@import "typography";
+@import "centered-nav";
+
+body{
+	background-color: #6C7A89;
+	margin: 0;
+}
+
+
+#main{
+	@include outer-container(100%);
+	// background-color: #6C7A89;
+}
+
+.red{
+	@include boxattributes(#D91E18, #E74C3C, block-collapse, 4);
+}
+
+.orange{
+	@include boxattributes(#E87E04, #F5AB35, block-collapse, 4);
+}
+
+.yellow{
+	@include boxattributes(#F9BF3B, #FDE3A7, block, 4);
+}
+
+.pink{
+	@include boxattributes(#DB0A5B, #F62459, block-collapse, 4);
+}
+
+.purple{
+	@include boxattributes(#8E44AD, #BF55EC, block, 8);
+}
+
+.blue{
+	@include boxattributes(#22A7F0, #6BB9F0, block, 12);
+}
+
+
+// Bringing in CSS for centered navigation bar. Will try to make it it's own partial later
+
+
